@@ -4,14 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
 a{
     text-decoration: none;
     padding: 5px 10px;
     color: #fff;
 }
 
+img{
+    display: block;
+}
 /* utility */
+
+.col-red {
+    color: red;
+    font-weight: bold;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
 header{
     background-color: chocolate;
 }
@@ -40,3 +56,48 @@ header{
 
 /* main */
 
+.main-row{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-content{
+    margin: 20px 0;
+    width: calc(100% / 3 - 1%);
+}
+.main-position{
+    position: relative;
+}
+
+#labelId, .label{
+    padding: 5px 10px;
+}
+.label{
+    color: #fff;
+    background-color: red;
+}
+.labes{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+}
+
+#labelId{
+    color: #fff;
+    background-color: green;
+}
+.heart{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    top: 10px;
+    right: 0px;
+    text-align: center;
+}
+
+.descrition{}
+
+h4{
+    text-transform: uppercase;
+}
