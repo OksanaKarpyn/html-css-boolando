@@ -30,13 +30,16 @@ img{
 
 header{
     background-color: chocolate;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .container{
     width: 80%;
     margin: auto;
 }
 .icon{
-    margin: 0 10px;
+    margin-right: 10px;
     color: #fff;
 }
 
@@ -53,6 +56,7 @@ header{
     display: flex;
 
 }
+
 
 /* main */
 
@@ -96,8 +100,63 @@ header{
     text-align: center;
 }
 
-.descrition{}
-
-h4{
+.descrition h4{
+   padding: 5px 0; 
     text-transform: uppercase;
+}
+
+/* hover */
+.img-normal{
+    display: block;
+}
+.img-hover{
+    display: none;
+}
+.main-position{}
+
+.main-position:hover .img-hover{
+    display: block;
+}
+.main-position:hover .img-normal{
+    display: none;
+}
+
+.heart:hover{
+    color: red;
+}
+
+/* footer */
+footer{
+    background-color: black;
+   
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.footer-body{}
+.footer-title h4{
+    color: #fff;
+    padding: 20px 0;
+}
+.footer-text a{
+   font-size: 14px;
+   padding-left: 0;
+}
+.footer-social{
+}
+.social-title h4{
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.footer-icon{
+display: flex;
+
+}
+.footer-icon div{
+    margin-right: 10px;
+    font-size: 20px;
 }
